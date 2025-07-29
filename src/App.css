@@ -1,0 +1,189 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.signIn {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #8391c8;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.mari {
+  display: flex;
+  width: fit-content;
+  margin: 35px auto 50px;
+
+  img {
+    height: 6em;
+  }
+}
+
+.greatestHits {
+  background: url(./assets/lentejuelas.png);
+  background-size: 14rem;
+  img {
+    height: 22rem;
+  }
+  margin-bottom: 80px;
+}
+
+.carta {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(0,0,0,0.5)
+}
+
+.coolHover {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: all .2s ease-in-out;
+}
+.coolHover:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1)
+}
+
+.altCoolHover {
+  height: 10rem;
+}
+.altCoolHover:hover {
+  filter: drop-shadow(0 0 2em #dd5c9f);
+}
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  width: 30rem;
+  justify-content: center;
+}
+.figure {
+  width: 13rem;
+  height: 13rem;
+  position: relative;
+  background-color: #97b5d1;
+  padding: 19px 19px 135px 19px;
+  margin: 2rem auto;
+}
+.figure img{
+  width: 100%;
+  border-left: 1px solid #485b90;
+  border-bottom: 1px solid #485b90;
+  border-right: 1px solid #c4cef6;
+  border-top: 1px solid #c4cef6;
+}
+
+.style1 {
+  transform: rotate(-6deg);
+}
+.style2 {
+  margin-top: 20px;
+}
+.style3 {
+  transform: rotate(6deg);
+}
+
+.thingsILoveAboutYou {
+  font-family: sans-serif;
+  background: white;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 460px;
+  border: 3px solid black;
+  font-weight: bold;
+
+  .content {
+    background: #dd5c9f;
+    height: 420px;
+    width: 400px;
+    margin: auto;
+    z-index: 4;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 15px;
+}
+
+@media (min-width: 360px) and (max-width: 530px) {
+  .figure {
+    width: 20vw;
+    height: 10vh;
+    padding: 10px 10px 60px 10px;
+    margin: 1rem auto;
+  }
+  .mari {
+    img {
+      height: 5em;
+    }
+  }
+  .imageContainer {
+    width: 80vw;
+  }
+  .thingsILoveAboutYou {
+    height: 415px;
+    width: 360px;
+
+    .content {
+      height: 340px;
+      width: 310px;
+    }
+  }
+}
+@media (min-width: 530px) and (max-width: 600px) {
+  .figure {
+    width: 20vw;
+    height: 14vh;
+    padding: 15px 15px 100px 15px;
+    margin: 1rem auto;
+  }
+  .mari {
+    img {
+      height: 5em;
+    }
+  }
+}
+
+.snoopy1, .snoopy2 {
+  width: 50vw;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 10px;
+}
